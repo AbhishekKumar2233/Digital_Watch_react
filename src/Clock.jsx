@@ -1,4 +1,6 @@
 import React, { Component } from "react";
+import "./styles.css";
+
 const clockTile = {
   color: "white",
   textAlign: "center"
@@ -59,7 +61,7 @@ class Clock extends Component {
   }
   render() {
     return (
-      <div style={clockTile}>
+      <div className="clock" style={clockTile}>
         <span style={clockSpan}>{this.state.time}</span>
       </div>
     );
